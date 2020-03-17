@@ -1,0 +1,2 @@
+# Get EC2 Instances names and IPs
+aws --region eu-central-1 ec2 describe-instances --query "Reservations[].Instances[].[Tags[?Key=='Name'].Value, PrivateIpAddress]"
