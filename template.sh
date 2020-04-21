@@ -1,6 +1,6 @@
 #!/bin/bash
 # absolute path to the script directory
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 function help() {
   cat <<EOF
